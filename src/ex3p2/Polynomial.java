@@ -1,3 +1,5 @@
+package ex3p2;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -73,7 +75,7 @@ public class Polynomial {
     public Polynomial add(Polynomial other) {
         int retDegree = Math.max(this.getDegree(), other.getDegree());
         double[] retCoeffArray = new double[retDegree + 1];
-        for(int i = 0;i<Math.min(coeffs.length,  other.coeffs.length); ++i) {
+        for(int i = 0; i<Math.min(coeffs.length,  other.coeffs.length); ++i) {
             retCoeffArray[i] = this.coeffs[i] + other.coeffs[i];
         }
 
